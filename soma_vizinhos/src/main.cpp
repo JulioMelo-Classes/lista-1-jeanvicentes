@@ -1,16 +1,19 @@
-/*!
- * @brief This code implements the "Soma Vizinhos" programming problem
- * @author selan
- * @data June, 6th 2021
- */
 #include <iostream>
-using std::cout;
-using std::cin;
-using std::endl;
 
-int main( void )
-{
-    // TODO: Adicione seu código aqui. 
-
-    return 0;
+/*
+acho que vc entendeu errado o problema, não vou considerar
+*/
+int main() {
+ int n;
+ int tamanho;
+ int somatorio = 0;
+ std::cin >> n >> tamanho;
+ for (int i=0; i<5; i++){ //aqui não era 5, seria tamanho ou abs(tamanho)
+   if (tamanho < 0)
+     somatorio += n+i;
+   else
+     somatorio += n-i;
+ }
+ std::cout << somatorio << "\n";
 }
+

@@ -1,12 +1,14 @@
 #include <iostream>
-using std::cin;
-using std::cout;
-
-const int SIZE = 5; // input size.
-
-int main(void)
-{
-    // TODO: Adicione aqui seu código.
-
-    return 0;
+ /*
+ ok! mas atente a sua indentação!
+ */
+int main() {
+ int contagem = 0;
+ int numero;
+ for(int i=0; i<5; i++){
+   std::cin >> numero;
+   if (numero < 0)
+     contagem++;
+ }
+ std::cout << contagem << "\n";
 }
